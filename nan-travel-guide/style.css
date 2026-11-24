@@ -1,0 +1,26 @@
+:root{--bg:#f2f5f3;--ink:#14221d;--rice:#4c8a5b;--indigo:#2e3f7a;--gold:#c9a24b;--mut:#51615a;--line:#d5ddd8}
+*{box-sizing:border-box}html{scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 Sarabun,"Noto Sans Thai",Tahoma,sans-serif}
+h1,h2,h3{font-family:"Noto Serif Thai",Georgia,serif;line-height:1.3;margin:0 0 .5em}
+a{color:var(--indigo)}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.w{max-width:1000px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}header .w{display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;padding:14px 20px}
+.logo{font:800 20px "Noto Serif Thai",serif;color:var(--ink);text-decoration:none;margin-right:auto}
+nav a{color:var(--mut);text-decoration:none;margin-right:18px}nav a[aria-current],nav a:hover{color:var(--ink);border-bottom:2px solid var(--gold)}
+.hero{background:var(--ink);color:#fff;padding:64px 0 0;overflow:hidden}
+.hero h1{font-size:clamp(34px,6vw,60px);font-weight:800;max-width:14em}.hero p{max-width:34em;color:#d6e3db}
+.btn{display:inline-block;padding:10px 22px;border-radius:4px;background:var(--gold);color:var(--ink);font-weight:600;text-decoration:none;border:0;font-size:1em;cursor:pointer;margin:6px 10px 6px 0}
+.btn.alt{background:transparent;color:#fff;border:1px solid #fff}
+.hero svg{display:block;width:100%;height:auto;margin-top:36px}
+main{padding:44px 0 56px}h2{font-size:28px}
+.note{background:#fff;border-left:4px solid var(--gold);padding:10px 16px;font-size:15px;color:var(--mut);margin:0 0 32px}
+.place{display:grid;grid-template-columns:200px 1fr;gap:6px 28px;padding:24px 0;border-top:1px solid var(--line)}
+.place h2{font-size:22px;margin:0}.place small{color:var(--rice);font-weight:600}
+.place p{margin:0 0 8px;max-width:38em}.tip{color:var(--mut);font-size:15px}
+.day{border-left:4px solid var(--rice);padding:2px 0 2px 20px;margin:0 0 26px}.day h2{font-size:22px}
+.day ul,.day p{margin:0;max-width:38em}
+form{display:grid;gap:14px;max-width:520px}label{font-weight:600}
+input,textarea{width:100%;padding:10px;border:1px solid #9aa9a1;border-radius:4px;font:inherit;background:#fff}
+footer{background:var(--ink);color:#b7c7be;padding:24px 0;font-size:15px}
+@media(max-width:640px){.place{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:no-preference){.btn{transition:transform .15s}.btn:hover{transform:translateY(-2px)}}
